@@ -13,9 +13,12 @@ jobs:
         uses: actions/setup-node@v3
         with: 
           node-version: '20.15.0'
+      
       - name: Instalar dependecias
         run: npm install
+      
       - name: Build
         run: npm run build
+      
       - name: Rodar teste de unidade com jest
         run: npm run test
