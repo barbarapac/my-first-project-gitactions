@@ -1,0 +1,21 @@
+name: Teste de unidade Node.js
+
+on:
+  push: 
+    branches: [ main ]
+
+jobs:
+  teste-unidade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Usar Node 20.15.0
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '20.15.0'
+      - name: Instalar dependecias
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Rodar teste de unidade com jest
+        run: npm run test
