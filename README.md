@@ -1,6 +1,6 @@
 # Projeto Jest - Integração Contínua com GitHub Actions
 
-Este é meu primeiro projeto de integração contínua (CI) usando GitHub Actions. O projeto é parte da disciplina **Cultura e Práticas DevOps** do curso de pós-graduação em **Arquitetura de Sistemas Distribuídos** na PUC Minas.
+Projeto de integração contínua (CI) usando GitHub Actions. O projeto é parte da disciplina **Cultura e Práticas DevOps** do curso de pós-graduação em **Arquitetura de Software Distribuído** na PUC Minas.
 
 ## Descrição
 
@@ -12,7 +12,7 @@ A pipeline está definida no arquivo `.github/workflows/ci.yml` e consiste em um
 
 1. **Instalação do Node.js**: Define a versão do Node.js para o ambiente de execução.
 2. **Instalação das Dependências**: Instala todas as dependências necessárias para o projeto utilizando `npm install`.
-3. **Build do Projeto**: Realiza o build do projeto (se aplicável).
+3. **Build do Projeto**: Realiza o build do projeto.
 4. **Execução dos Testes**: Roda os testes unitários utilizando o Jest.
 
 ## Estrutura da Pipeline
